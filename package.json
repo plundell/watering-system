@@ -1,0 +1,30 @@
+{
+	"name": "watering-system",
+	"version": "1.0.0",
+	"description": "An Express app intended to run on an RPi connected to relays which in turn water plants",
+	"main": "dist/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc; node ./replace-shebang.js; eslint --fix 'dist/**/*.js'"
+	},
+	"keywords": [
+		"raspberrypi",
+		"rpi",
+		"plants",
+		"watering"
+	],
+	"author": "plundell",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/express": "^4.17.17",
+		"@types/node": "^16.0.0",
+		"@typescript-eslint/eslint-plugin": "^5.0.0",
+		"@typescript-eslint/parser": "^5.0.0",
+		"eslint": "^8.0.0",
+		"typescript": "^4.5.0",
+		"ts-node": "^10.0.0"
+	},
+	"dependencies": {
+		"express": "^4.18.2"
+	}
+}
